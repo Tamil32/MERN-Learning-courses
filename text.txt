@@ -1,0 +1,50 @@
+function App() {
+  
+  const name = "Tamil";
+  const age = 25;
+  const phone = 1234567890;
+
+  const showuser = false;
+
+  const user = [
+    {id: 1, name: "Tamil", age: 25},
+    {id: 2, name: "Kumar", age: 26},
+    {id: 3, name: "Raja", age: 27},
+    {id: 4, name: "Ravi", age: 28},
+  ]
+
+  console.log(user);
+
+  return (
+
+    <div>
+      <h1>name : {name.toUpperCase}</h1>
+      <h2>age : {age}</h2>
+      <h3>phone : {phone}</h3>
+
+       <h4>userlength {user.length}</h4>
+
+      <span>{5+100}</span>
+
+      {/* <ul>
+        {user.map((user) => (
+          <li key={user.id}>{user.name} - {user.age}</li>
+        ))}
+      </ul> */}
+
+
+{/* using for and opearters to check the valu and give the out puts */}
+
+
+      {showuser && (<ul>
+        {user.map((user) => (
+          <li key={user.id}>{user.name} - {user.age}</li>
+        ))}
+      </ul>)}
+    </div>
+    
+    
+  )
+}
+
+export default App
